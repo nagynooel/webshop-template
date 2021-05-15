@@ -1,6 +1,7 @@
 /*Navbar*/
 .dropdown-item:hover{
-    background-color: #007bff;
+    background-color: #6c757d;
+    color: #fff;
 }
 
 /*Carousel*/
