@@ -6,3 +6,7 @@ function showSuccess(){
             $(".alert").removeClass("show");
         }, 2000);
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop - Elérhetőségek</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function initMap() {
+            const loc = { lat: 47.50732390356034, lng: 19.045711258793588 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: loc,
+            });
+            const marker = new google.maps.Marker({
+                position: loc,
+                map: map,
+            });
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/6eedee95c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 pt-3 pb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Webshop</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékeink
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="products/clothing.html">Ruhák</a>
+                        <a class="dropdown-item" href="products/shoes.html">Cipők</a>
+                        <a class="dropdown-item" href="products/accessories.html">Kiegészítők</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Cégünkről</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact_us.html">Elérhetőségeink</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Keresés" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div id="map"></div>
+    <div class="container">
+        <h1 class="text-center mt-2">Elérhetőségeink</h1>
+                <hr>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h4 class="mt-2">Ügyfélszolgálat:</h4>
+                <hr>
+                <p><i class="far fa-calendar-alt"></i> <strong>Nyitvatartás:</strong><br>Hétfő-Péntek: 08.00-18.00<br>Szombat-Vasárnap: 08.00-14.00</p>
+                <p><i class="fas fa-phone"></i> <strong>Telefonszám:</strong> 123456789<br><i class="far fa-envelope"></i> <strong>E-mail cím:</strong> ugyfelszolgalat@webshop.hu</p>
+                <h4 class="mt-4">Cégünk adatai:</h4>
+                <hr>
+                <p><strong>Cégnév:</strong> Webshop kft.<br><strong>Székhely:</strong> Budapest, Kossuth Lajos tér 1-3, 1055<br><strong>Cégjegyzéki szám:</strong> HU426462<br><strong>Adószám:</strong> 45236452</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img class="w-100 h-100 rounded shadow-lg" src="img/contact_us_support.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact_form mt-5 p-4 rounded">
+            <h3 class="text-center mb-4">Írj nekünk egy e-mailt! <i class="far fa-envelope"></i></h3>
+            <p><span class="text-danger">*</span>-al jelölt mezők kitöltése kötelező</p>
+            <form>
+                <div class="form-group">
+                    <label for="contact_name">Név <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" id="contact_name" placeholder="Kis János">
+                </div>
+                <div class="form-group">
+                    <label for="contact_email">Email cím <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="contact_email" aria-describedby="email" placeholder="példa@példa.hu">
+                </div>
+                <div class="form-group">
+                    <label for="contact_subject">Tárgy <span class="text-danger">*</span> <i class="far fa-question-circle" data-toggle="tooltip" data-placement="right" title="Ide írd az e-mail tárgyát. Próbálj meg az e-mail tartalmához illő tárgyat választani! Például, hogyha a weboldalon észrevettél egy hibát és azt szeretnéd jelenteni, akkor írd azt, hogy Hibabejelentés"></i></label>
+                    <input type="email" class="form-control" id="contact_subject" placeholder="pl.: Hibabejelentés / Kérdés szolgáltatással szemben">
+                </div>
+                <div class="form-group">
+                    <label for="contact_text">Üzenet <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="contact_text" rows="3"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Az <a href="privacy.html">adatkezelési tájékoztatót</a>  elolvastam és elfogadom.</label>
+                </div>
+                <button type="submit" class="btn btn-secondary">Küldés</button>
+            </form>
+        </div>
+    </div>
+    <div class="text-center mt-5 mb-5" id="footer">
+        <p>&#169;Nagy Noel 2021 - Minden jog fenttartva!</p>
+        <a href="terms_of_service.html">Álltalános felhasználói szerződés</a>
+        <a class="font-weight-bold"> - </a>
+        <a href="privacy.html">Adatkezelési tájékoztató</a>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_ID&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
