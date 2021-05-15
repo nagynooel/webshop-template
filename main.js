@@ -4,5 +4,5 @@ function showSuccess(){
         function() 
         {
             $(".alert").removeClass("show");
-        }, 5000);
+        }, 2000);
 }
