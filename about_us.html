@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eedee95c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="alert alert-success fade hide" role="alert">
+        Sikeresen hozzáadva a kosárhoz
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 pt-3 pb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Webshop</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékeink
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="products/clothing.html">Ruhák</a>
+                        <a class="dropdown-item" href="products/shoes.html">Cipők</a>
+                        <a class="dropdown-item" href="products/accessories.html">Kiegészítők</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about_us.html">Cégünkről</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Elérhetőségeink</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Keresés" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div id="headerCarouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#headerCarouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#headerCarouselIndicators" data-slide-to="1"></li>
+            <li data-target="#headerCarouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carousel/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Modern, fiatalos ruhák</h2>
+                    <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/clothing.html">Érdekelnek a ruhák!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>A legtrendibb cipők, a legnagyobb világmárkáktól</h2>
+                    <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/shoes.html">Had nézzem!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Klasszikus és okosórák, táskák, nyakkendők és még sok más</h2>
+                    <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/accessories.html">Válogass a kiegészítőink közül!</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#headerCarouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerCarouselIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-2">Cégünkről</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h3>Történetünk:</h3>
+                <hr>
+                <p class="text-justify">Cégünk 2009 óta foglalkozik online kereskedelemmel. Eleinte csak ruhákat árultunk, viszont 2012-ben kibővítettük a kínálatunkat és azóta cipőket és kiegészítőket is árulunk. Az elműlt 10+ év alatt nagyon sok tapasztalatot szereztünk. Folyamatosan figyelünk a vásárlóink visszajelzésésre. (<a href="contact_us.html#contact_form">Itt tudsz velünk kapcsolatba lépni!</a>) 2009 óta az a célunk, hogy folyamatosan bővítsük a kínálatunkat és tartsuk lent az árainkat. Büszkeséggel tölt el minket, hogy működésünk alatt nagyon sok jó visszajelzést kaptunk vásárlóinktól.</p>
+                <h3 class="text-center">Amiket rólunk mondtak:</h3>
+                <div id="about_us_carousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div>
+                                <blockquote class="blockquote text-center">
+                                    <p class="mb-0 ml-5 mr-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vel consequuntur a soluta, quam corporis velit, deleniti quasi ad vitae dolore. Aspernatur odio consequuntur harum, expedita debitis totam iure culpa.
+                                    Nihil dolorem qui laborum laboriosam tempora pariatur vitae minima, tempore molestiae quaerat sapiente numquam, veniam impedit dicta velit, a nostrum vel assumenda. Incidunt totam itaque numquam libero quo minus velit."</p>
+                                    <footer class="blockquote-footer"><cite title="Author">Kiss Jakab</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>
+                                <blockquote class="blockquote text-center">
+                                    <p class="mb-0 ml-5 mr-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vel consequuntur a soluta, quam corporis velit, deleniti quasi ad vitae dolore. Aspernatur odio consequuntur harum, expedita debitis totam iure culpa.
+                                    Nihil dolorem qui laborum laboriosam tempora pariatur vitae minima, tempore molestiae quaerat sapiente numquam, veniam impedit dicta velit, a nostrum vel assumenda. Incidunt totam itaque numquam libero quo minus velit."</p>
+                                    <footer class="blockquote-footer"><cite title="Author">Nagy András</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>
+                                <blockquote class="blockquote text-center">
+                                    <p class="mb-0 ml-5 mr-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vel consequuntur a soluta, quam corporis velit, deleniti quasi ad vitae dolore. Aspernatur odio consequuntur harum, expedita debitis totam iure culpa.
+                                    Nihil dolorem qui laborum laboriosam tempora pariatur vitae minima, tempore molestiae quaerat sapiente numquam, veniam impedit dicta velit, a nostrum vel assumenda. Incidunt totam itaque numquam libero quo minus velit."</p>
+                                    <footer class="blockquote-footer"><cite title="Author">Dr. Farkas Ákos</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#about_us_carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#about_us_carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                  </div>
+                  <h3 class="text-center mt-3">Induló raktárunk:</h3>
+                  <hr>
+                  <img src="img/about_us/storage.jpg" alt="" class="w-100">
+                  <h3 class="text-center mt-3">Legújabb raktárunk:</h3>
+                  <hr>
+                  <img src="img/about_us/warehouse1.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h3>Mérföldköveink:</h3>
+                <hr>
+                <div class="timeline-container">
+                    <div class="timeline-item" date-is='2009 május'>
+                        <h1>Megalakult a cég</h1>
+                        <p>Ebben az időben egy kis raktárból üzemeltünk, ezáltal sokkal kisebb volt a választékunk is.</p>
+                    </div>
+                    <div class="timeline-item" date-is='2011 november'>
+                        <h1>Médiakampány</h1>
+                        <p>A weboldalunk nagyon kedvelté vállt vásárlóink álltal. Az akkori egyik legnagyobb magyar televízió megkeresett minket és készítettek velünk egy interjút. Az interjúnak köszönhetően webshopunk látogatói és vásárlóinak száma megnőtt.</p>
+                    </div>
+                    <div class="timeline-item" date-is='2012 február'>
+                        <h1>Raktár bővítése, futárszolgálatal szerződés</h1>
+                        <p>A vásárlók számának növekedése miatt kibővítettük a raktárunkat, valamint leszerződtünk a GLS futárszolgálattal, a lehető leggyorsabb szállítás érdekében.</p>
+                    </div>
+                    <div class="timeline-item" date-is='2012 május'>
+                        <h1>Weboldal felújítása</h1>
+                        <p>A növeklő igény miatt fejlesztettük weboldalunk gyorsaságát, valamint egy új kinézetet adtunk neki.</p>
+                    </div>
+                    <div class="timeline-item" date-is='2016 március'>
+                        <h1>Saját raktárépület építése</h1>
+                        <p>Az évek alatt annyira megnövekedett a kínálatunk, valamint a termékeink utáni kereslet, hogy 2015-ben belekezdtünk egy hatalmas raktárépület építésébe, amlye 2016 februárjában készült el. Márciusra sikerült berendezkednünk és onnantól kezzdve még nagyobb ütemben tudtuk növelni kínálatunkat.</p>
+                    </div>
+                    <div class="timeline-item" date-is='2021 május'>
+                        <h1>Weboldal modernizálása</h1>
+                        <p>Cégünk és ezzel együtt weboldalunk egy teljesen új arculatot váltott. Weboldalunk a legmodernebb technikákat és design elemeket használja, az egyszerű, gyors, kifinimúlt és kénylemes vásárlás érdekében.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5 mb-5" id="footer">
+        <p>&#169;Nagy Noel 2021 - Minden jog fenttartva!</p>
+        <a href="terms_of_service.html">Álltalános felhasználói szerződés</a>
+        <a class="font-weight-bold"> - </a>
+        <a href="privacy.html">Adatkezelési tájékoztató</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
