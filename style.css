@@ -4,6 +4,15 @@
     color: #fff;
 }
 
+.nav_right_icons a i{
+    font-size: 18px;
+    color: rgba(0,0,0,.5);
+}
+
+.nav_right_icons a i:hover{
+    color: rgba(0,0,0);
+}
+
 /*Carousel*/
 .carousel-caption{
     top: 50%;
