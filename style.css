@@ -112,6 +112,11 @@ ol.steps-list > li + li {
     }
 }
 
+/*Top Advertisement*/
+.top-ad{
+    background-color: #000;
+}
+
 /*Accordion*/
 
 .accordion{
