@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eedee95c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="alert alert-success fade hide" role="alert">
+        Sikeresen hozzáadva a kosárhoz
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 pt-3 pb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Webshop</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékeink
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="products/clothing.html">Ruhák</a>
+                        <a class="dropdown-item" href="products/shoes.html">Cipők</a>
+                        <a class="dropdown-item" href="products/accessories.html">Kiegészítők</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Cégünkről</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Elérhetőségeink</a>
+                </li>
+            </ul>
+            <div class="navbar-text nav_right_icons">
+                <a href="products/cart.html"><i class="fas fa-shopping-cart mr-2"></i></a>
+                <a href="profile.html"><i class="far fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="w-100 text-light container-fluid top-ad">
+        <div class="row text-center p-1">
+            <div class="col-sm-4">
+                <strong><i class="fas fa-money-bill"></i> FIZETÉS UTÁNVÉTTEL</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong><i class="fas fa-truck"></i> INGYENES SZÁLLÍTÁS ÉS VISSZAKÜLDÉS</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong><i class="fas fa-exchange-alt"></i> 90 NAPOS VISSZAKÜLDÉS</strong>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mt-5 spacer"></div>
+        <div class="row mt-2">
+            <div class="col-4 border-right border-color-secondary">
+                <div class="nav flex-column nav-pills faq-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="true"><i class="far fa-user-circle"></i> Fiókom</a>
+                    <a class="nav-link" id="v-pills-shipping-tab" data-toggle="pill" href="#v-pills-shipping" role="tab" aria-controls="v-pills-shipping" aria-selected="false"><i class="fas fa-truck"></i> Szállítási információk</a>
+                    <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false"><i class="fas fa-shopping-cart"></i> Rendeléseim</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                        <h3>Fiók adatok megváltoztatása</h3>
+                        <form>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <input name="first-name" type="text" class="form-control" placeholder="Vezetéknév">
+                                </div>
+                                <div class="col">
+                                    <input name="last-name" type="text" class="form-control" placeholder="Keresztnév">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Mentés</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <input name="first-name" type="text" class="form-control" placeholder="E-mail cím">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Mentés</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <input name="old-pwd" type="password" class="form-control" placeholder="Régi jelszó">
+                                </div>
+                                <div class="col">
+                                    <input name="new-pwd" type="password" class="form-control" placeholder="Új jelszó">
+                                </div>
+                                <div class="col">
+                                    <input name="new-pwd-confirm" type="password" class="form-control" placeholder="Új jelszó újra">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Mentés</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-shipping" role="tabpanel" aria-labelledby="v-pills-shipping-tab">
+                        <h3>Számlázási adatok:</h3>
+                        <form>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="name-company">Név/Cégnév</label>
+                                    <input id="name-company" name="name-company" type="text" class="form-control" placeholder="Név/Cégnév">
+                                </div>
+                                <div class="col">
+                                    <label for="phone-num">Telefonszám</label>
+                                    <input id="phone-num" name="phone-num" type="number" class="form-control" placeholder="Telefonszám">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="country">Ország</label>
+                                    <select id="country" class="form-control" name="country"><option value="AF">Afganiszt&aacute;n</option><option value="AX">&Aring;land-szigetek</option><option value="AL">Alb&aacute;nia</option><option value="DZ">Alg&eacute;ria</option><option value="AS">Amerikai Szamoa</option><option value="VI">Amerikai Virgin-szigetek</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarktisz</option><option value="AG">Antigua &eacute;s Barbuda</option><option value="AR">Argent&iacute;na</option><option value="AW">Aruba</option><option value="AU">Ausztr&aacute;lia</option><option value="AT">Ausztria</option><option value="UM">Az USA lakatlan k&uuml;lbirtokai</option><option value="AZ">Azerbajdzs&aacute;n</option><option value="BS">Bahama-szigetek</option><option value="BH">Bahrein</option><option value="BD">Banglades</option><option value="BB">Barbados</option><option value="BY">Belarusz</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhut&aacute;n</option><option value="GW">Bissau-Guinea</option><option value="BO">Bol&iacute;via</option><option value="BA">Bosznia-Hercegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet-sziget</option><option value="BR">Braz&iacute;lia</option><option value="IO">Brit Indiai-&oacute;ce&aacute;ni Ter&uuml;let</option><option value="VG">Brit Virgin-szigetek</option><option value="BN">Brunei</option><option value="BG">Bulg&aacute;ria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CL">Chile</option><option value="CY">Ciprus</option><option value="KM">Comore-szigetek</option><option value="CK">Cook-szigetek</option><option value="CR">Costa Rica</option><option value="CW">Cura&ccedil;ao</option><option value="TD">Cs&aacute;d</option><option value="CZ">Csehorsz&aacute;g</option><option value="DK">D&aacute;nia</option><option value="ZA">D&eacute;l-afrikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="KR">D&eacute;l-Korea</option><option value="SS">D&eacute;l-Szud&aacute;n</option><option value="GS">D&eacute;li-Georgia &eacute;s D&eacute;li-Sandwich-szigetek</option><option value="DM">Dominika</option><option value="DO">Dominikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="DJ">Dzsibuti</option><option value="EC">Ecuador</option><option value="GQ">Egyenl&iacute;tői-Guinea</option><option value="US">Egyes&uuml;lt &Aacute;llamok</option><option value="AE">Egyes&uuml;lt Arab Em&iacute;rs&eacute;gek</option><option value="GB">Egyes&uuml;lt Kir&aacute;lys&aacute;g</option><option value="EG">Egyiptom</option><option value="CI">Elef&aacute;ntcsontpart</option><option value="ER">Eritrea</option><option value="KP">&Eacute;szak-Korea</option><option value="MK">&Eacute;szak-Maced&oacute;nia</option><option value="MP">&Eacute;szaki Mariana-szigetek</option><option value="EE">&Eacute;sztorsz&aacute;g</option><option value="ET">Eti&oacute;pia</option><option value="FK">Falkland-szigetek</option><option value="FO">Fer&ouml;er szigetek</option><option value="FJ">Fidzsi</option><option value="FI">Finnorsz&aacute;g</option><option value="TF">Francia D&eacute;li Ter&uuml;letek</option><option value="GF">Francia Guyana</option><option value="PF">Francia Polin&eacute;zia</option><option value="FR">Franciaorsz&aacute;g</option><option value="PH">F&uuml;l&ouml;p-szigetek</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GH">Gh&aacute;na</option><option value="GI">Gibralt&aacute;r</option><option value="GR">G&ouml;r&ouml;gorsz&aacute;g</option><option value="GD">Grenada</option><option value="GL">Gr&ouml;nland</option><option value="GE">Gr&uacute;zia</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard-sziget &eacute;s McDonald-szigetek</option><option value="BQ">Holland Karib-t&eacute;rs&eacute;g</option><option value="NL">Hollandia</option><option value="HN">Honduras</option><option value="HK">Hongkong KKT</option><option value="HR">Horv&aacute;torsz&aacute;g</option><option value="IN">India</option><option value="ID">Indon&eacute;zia</option><option value="IQ">Irak</option><option value="IR">Ir&aacute;n</option><option value="IE">&Iacute;rorsz&aacute;g</option><option value="IS">Izland</option><option value="IL">Izrael</option><option value="JM">Jamaica</option><option value="JP">Jap&aacute;n</option><option value="YE">Jemen</option><option value="JE">Jersey</option><option value="JO">Jord&aacute;nia</option><option value="KY">Kajm&aacute;n-szigetek</option><option value="KH">Kambodzsa</option><option value="CM">Kamerun</option><option value="CA">Kanada</option><option value="CX">Kar&aacute;csony-sziget</option><option value="QA">Katar</option><option value="KZ">Kazahszt&aacute;n</option><option value="TL">Kelet-Timor</option><option value="KE">Kenya</option><option value="CN">K&iacute;na</option><option value="KG">Kirgiziszt&aacute;n</option><option value="KI">Kiribati</option><option value="CC">K&oacute;kusz (Keeling)-szigetek</option><option value="CO">Kolumbia</option><option value="CG">Kong&oacute; - Brazzaville</option><option value="CD">Kong&oacute; - Kinshasa</option><option value="CF">K&ouml;z&eacute;p-afrikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="CU">Kuba</option><option value="KW">Kuvait</option><option value="LA">Laosz</option><option value="PL">Lengyelorsz&aacute;g</option><option value="LS">Lesotho</option><option value="LV">Lettorsz&aacute;g</option><option value="LB">Libanon</option><option value="LR">Lib&eacute;ria</option><option value="LY">L&iacute;bia</option><option value="LI">Liechtenstein</option><option value="LT">Litv&aacute;nia</option><option value="LU">Luxemburg</option><option value="MG">Madagaszk&aacute;r</option><option value="HU">Magyarorsz&aacute;g</option><option value="MO">Maka&oacute; KKT</option><option value="MY">Malajzia</option><option value="MW">Malawi</option><option value="MV">Mald&iacute;v-szigetek</option><option value="ML">Mali</option><option value="MT">M&aacute;lta</option><option value="IM">Man-sziget</option><option value="MA">Marokk&oacute;</option><option value="MH">Marshall-szigetek</option><option value="MQ">Martinique</option><option value="MR">Maurit&aacute;nia</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexik&oacute;</option><option value="MM">Mianmar</option><option value="FM">Mikron&eacute;zia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mong&oacute;lia</option><option value="ME">Montenegr&oacute;</option><option value="MS">Montserrat</option><option value="MZ">Mozambik</option><option value="NA">Nam&iacute;bia</option><option value="NR">Nauru</option><option value="DE">N&eacute;metorsz&aacute;g</option><option value="NP">Nep&aacute;l</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nig&eacute;ria</option><option value="NU">Niue</option><option value="NF">Norfolk-sziget</option><option value="NO">Norv&eacute;gia</option><option value="EH">Nyugat-Szahara</option><option value="IT">Olaszorsz&aacute;g</option><option value="OM">Om&aacute;n</option><option value="RU">Oroszorsz&aacute;g</option><option value="AM">&Ouml;rm&eacute;nyorsz&aacute;g</option><option value="PK">Pakiszt&aacute;n</option><option value="PW">Palau</option><option value="PS">Palesztin Ter&uuml;let</option><option value="PA">Panama</option><option value="PG">P&aacute;pua &Uacute;j-Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PN">Pitcairn-szigetek</option><option value="PT">Portug&aacute;lia</option><option value="PR">Puerto Rico</option><option value="RE">R&eacute;union</option><option value="RO">Rom&aacute;nia</option><option value="RW">Ruanda</option><option value="KN">Saint Kitts &eacute;s Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="VC">Saint Vincent &eacute;s a Grenadine-szigetek</option><option value="BL">Saint-Barth&eacute;lemy</option><option value="PM">Saint-Pierre &eacute;s Miquelon</option><option value="SB">Salamon-szigetek</option><option value="SV">Salvador</option><option value="SM">San Marino</option><option value="ST">S&atilde;o Tom&eacute; &eacute;s Pr&iacute;ncipe</option><option value="SC">Seychelle-szigetek</option><option value="SL">Sierra Leone</option><option value="SX">Sint Maarten</option><option value="ES">Spanyolorsz&aacute;g</option><option value="LK">Sr&iacute; Lanka</option><option value="SR">Suriname</option><option value="CH">Sv&aacute;jc</option><option value="SJ">Svalbard &eacute;s Jan Mayen</option><option value="SE">Sv&eacute;dorsz&aacute;g</option><option value="WS">Szamoa</option><option value="SA">Sza&uacute;d-Ar&aacute;bia</option><option value="SN">Szeneg&aacute;l</option><option value="SH">Szent Ilona</option><option value="RS">Szerbia</option><option value="SG">Szingap&uacute;r</option><option value="SY">Sz&iacute;ria</option><option value="SK">Szlov&aacute;kia</option><option value="SI">Szlov&eacute;nia</option><option value="SO">Szom&aacute;lia</option><option value="SD">Szud&aacute;n</option><option value="SZ">Szv&aacute;zif&ouml;ld</option><option value="TJ">T&aacute;dzsikiszt&aacute;n</option><option value="TW">Tajvan</option><option value="TZ">Tanz&aacute;nia</option><option value="TH">Thaif&ouml;ld</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TR">T&ouml;r&ouml;korsz&aacute;g</option><option value="TT">Trinidad &eacute;s Tobago</option><option value="TN">Tun&eacute;zia</option><option value="TC">Turks- &eacute;s Caicos-szigetek</option><option value="TV">Tuvalu</option><option value="TM">T&uuml;rkmeniszt&aacute;n</option><option value="UG">Uganda</option><option value="NC">&Uacute;j-Kaled&oacute;nia</option><option value="NZ">&Uacute;j-Z&eacute;land</option><option value="UA">Ukrajna</option><option value="UY">Uruguay</option><option value="UZ">&Uuml;zbegiszt&aacute;n</option><option value="VU">Vanuatu</option><option value="VA">Vatik&aacute;n</option><option value="VE">Venezuela</option><option value="VN">Vietn&aacute;m</option><option value="WF">Wallis &eacute;s Futuna</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="CV">Z&ouml;ld-foki K&ouml;zt&aacute;rsas&aacute;g</option></select>
+                                </div>
+                                <div class="col">
+                                    <label for="zip-code">Irányítószám</label>
+                                    <input id="zip-code" name="name-company" type="number" class="form-control" placeholder="Irányítószám">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="city">Település</label>
+                                    <input id="city" name="city" type="text" class="form-control" placeholder="Település">
+                                </div>
+                                <div class="col">
+                                    <label for="district">Kerület</label>
+                                    <input id="district" name="district" type="number" class="form-control" placeholder="Kerület">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="street">Közterület neve</label>
+                                    <input id="street" name="street" type="text" class="form-control" placeholder="Település">
+                                </div>
+                                <div class="col">
+                                    <label for="str-blvd">Közterület jellege (pl.: utca)</label>
+                                    <input id="str-blvd" name="str-blvd" type="text" class="form-control" placeholder="Közterület jellege">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="house-num">Hsz.</label>
+                                    <input id="house-num" name="house-num" type="number" class="form-control" placeholder="Hsz.">
+                                </div>
+                                <div class="col">
+                                    <label for="building-num">Ép.</label>
+                                    <input id="building-num" name="building-num" type="number" class="form-control" placeholder="Ép.">
+                                </div>
+                                <div class="col">
+                                    <label for="stairwell-num">Lph.</label>
+                                    <input id="stairwell-num" name="stairwell-num" type="number" class="form-control" placeholder="Lph.">
+                                </div>
+                                <div class="col">
+                                    <label for="floor-num">Szint</label>
+                                    <input id="floor-num" name="floor-num" type="number" class="form-control" placeholder="Szint">
+                                </div>
+                                <div class="col">
+                                    <label for="door-num">Ajtó</label>
+                                    <input id="door-num" name="door-num" type="number" class="form-control" placeholder="Ajtó">
+                                </div>
+                            </div>
+                            <h3 class="mt-2">Szállítási adatok:</h3>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        A szállítási cím megegyezik a számlázási címmel.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="country">Ország</label>
+                                    <select id="country" class="form-control" name="country"><option value="AF">Afganiszt&aacute;n</option><option value="AX">&Aring;land-szigetek</option><option value="AL">Alb&aacute;nia</option><option value="DZ">Alg&eacute;ria</option><option value="AS">Amerikai Szamoa</option><option value="VI">Amerikai Virgin-szigetek</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarktisz</option><option value="AG">Antigua &eacute;s Barbuda</option><option value="AR">Argent&iacute;na</option><option value="AW">Aruba</option><option value="AU">Ausztr&aacute;lia</option><option value="AT">Ausztria</option><option value="UM">Az USA lakatlan k&uuml;lbirtokai</option><option value="AZ">Azerbajdzs&aacute;n</option><option value="BS">Bahama-szigetek</option><option value="BH">Bahrein</option><option value="BD">Banglades</option><option value="BB">Barbados</option><option value="BY">Belarusz</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhut&aacute;n</option><option value="GW">Bissau-Guinea</option><option value="BO">Bol&iacute;via</option><option value="BA">Bosznia-Hercegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet-sziget</option><option value="BR">Braz&iacute;lia</option><option value="IO">Brit Indiai-&oacute;ce&aacute;ni Ter&uuml;let</option><option value="VG">Brit Virgin-szigetek</option><option value="BN">Brunei</option><option value="BG">Bulg&aacute;ria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CL">Chile</option><option value="CY">Ciprus</option><option value="KM">Comore-szigetek</option><option value="CK">Cook-szigetek</option><option value="CR">Costa Rica</option><option value="CW">Cura&ccedil;ao</option><option value="TD">Cs&aacute;d</option><option value="CZ">Csehorsz&aacute;g</option><option value="DK">D&aacute;nia</option><option value="ZA">D&eacute;l-afrikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="KR">D&eacute;l-Korea</option><option value="SS">D&eacute;l-Szud&aacute;n</option><option value="GS">D&eacute;li-Georgia &eacute;s D&eacute;li-Sandwich-szigetek</option><option value="DM">Dominika</option><option value="DO">Dominikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="DJ">Dzsibuti</option><option value="EC">Ecuador</option><option value="GQ">Egyenl&iacute;tői-Guinea</option><option value="US">Egyes&uuml;lt &Aacute;llamok</option><option value="AE">Egyes&uuml;lt Arab Em&iacute;rs&eacute;gek</option><option value="GB">Egyes&uuml;lt Kir&aacute;lys&aacute;g</option><option value="EG">Egyiptom</option><option value="CI">Elef&aacute;ntcsontpart</option><option value="ER">Eritrea</option><option value="KP">&Eacute;szak-Korea</option><option value="MK">&Eacute;szak-Maced&oacute;nia</option><option value="MP">&Eacute;szaki Mariana-szigetek</option><option value="EE">&Eacute;sztorsz&aacute;g</option><option value="ET">Eti&oacute;pia</option><option value="FK">Falkland-szigetek</option><option value="FO">Fer&ouml;er szigetek</option><option value="FJ">Fidzsi</option><option value="FI">Finnorsz&aacute;g</option><option value="TF">Francia D&eacute;li Ter&uuml;letek</option><option value="GF">Francia Guyana</option><option value="PF">Francia Polin&eacute;zia</option><option value="FR">Franciaorsz&aacute;g</option><option value="PH">F&uuml;l&ouml;p-szigetek</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GH">Gh&aacute;na</option><option value="GI">Gibralt&aacute;r</option><option value="GR">G&ouml;r&ouml;gorsz&aacute;g</option><option value="GD">Grenada</option><option value="GL">Gr&ouml;nland</option><option value="GE">Gr&uacute;zia</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard-sziget &eacute;s McDonald-szigetek</option><option value="BQ">Holland Karib-t&eacute;rs&eacute;g</option><option value="NL">Hollandia</option><option value="HN">Honduras</option><option value="HK">Hongkong KKT</option><option value="HR">Horv&aacute;torsz&aacute;g</option><option value="IN">India</option><option value="ID">Indon&eacute;zia</option><option value="IQ">Irak</option><option value="IR">Ir&aacute;n</option><option value="IE">&Iacute;rorsz&aacute;g</option><option value="IS">Izland</option><option value="IL">Izrael</option><option value="JM">Jamaica</option><option value="JP">Jap&aacute;n</option><option value="YE">Jemen</option><option value="JE">Jersey</option><option value="JO">Jord&aacute;nia</option><option value="KY">Kajm&aacute;n-szigetek</option><option value="KH">Kambodzsa</option><option value="CM">Kamerun</option><option value="CA">Kanada</option><option value="CX">Kar&aacute;csony-sziget</option><option value="QA">Katar</option><option value="KZ">Kazahszt&aacute;n</option><option value="TL">Kelet-Timor</option><option value="KE">Kenya</option><option value="CN">K&iacute;na</option><option value="KG">Kirgiziszt&aacute;n</option><option value="KI">Kiribati</option><option value="CC">K&oacute;kusz (Keeling)-szigetek</option><option value="CO">Kolumbia</option><option value="CG">Kong&oacute; - Brazzaville</option><option value="CD">Kong&oacute; - Kinshasa</option><option value="CF">K&ouml;z&eacute;p-afrikai K&ouml;zt&aacute;rsas&aacute;g</option><option value="CU">Kuba</option><option value="KW">Kuvait</option><option value="LA">Laosz</option><option value="PL">Lengyelorsz&aacute;g</option><option value="LS">Lesotho</option><option value="LV">Lettorsz&aacute;g</option><option value="LB">Libanon</option><option value="LR">Lib&eacute;ria</option><option value="LY">L&iacute;bia</option><option value="LI">Liechtenstein</option><option value="LT">Litv&aacute;nia</option><option value="LU">Luxemburg</option><option value="MG">Madagaszk&aacute;r</option><option value="HU">Magyarorsz&aacute;g</option><option value="MO">Maka&oacute; KKT</option><option value="MY">Malajzia</option><option value="MW">Malawi</option><option value="MV">Mald&iacute;v-szigetek</option><option value="ML">Mali</option><option value="MT">M&aacute;lta</option><option value="IM">Man-sziget</option><option value="MA">Marokk&oacute;</option><option value="MH">Marshall-szigetek</option><option value="MQ">Martinique</option><option value="MR">Maurit&aacute;nia</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexik&oacute;</option><option value="MM">Mianmar</option><option value="FM">Mikron&eacute;zia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mong&oacute;lia</option><option value="ME">Montenegr&oacute;</option><option value="MS">Montserrat</option><option value="MZ">Mozambik</option><option value="NA">Nam&iacute;bia</option><option value="NR">Nauru</option><option value="DE">N&eacute;metorsz&aacute;g</option><option value="NP">Nep&aacute;l</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nig&eacute;ria</option><option value="NU">Niue</option><option value="NF">Norfolk-sziget</option><option value="NO">Norv&eacute;gia</option><option value="EH">Nyugat-Szahara</option><option value="IT">Olaszorsz&aacute;g</option><option value="OM">Om&aacute;n</option><option value="RU">Oroszorsz&aacute;g</option><option value="AM">&Ouml;rm&eacute;nyorsz&aacute;g</option><option value="PK">Pakiszt&aacute;n</option><option value="PW">Palau</option><option value="PS">Palesztin Ter&uuml;let</option><option value="PA">Panama</option><option value="PG">P&aacute;pua &Uacute;j-Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PN">Pitcairn-szigetek</option><option value="PT">Portug&aacute;lia</option><option value="PR">Puerto Rico</option><option value="RE">R&eacute;union</option><option value="RO">Rom&aacute;nia</option><option value="RW">Ruanda</option><option value="KN">Saint Kitts &eacute;s Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="VC">Saint Vincent &eacute;s a Grenadine-szigetek</option><option value="BL">Saint-Barth&eacute;lemy</option><option value="PM">Saint-Pierre &eacute;s Miquelon</option><option value="SB">Salamon-szigetek</option><option value="SV">Salvador</option><option value="SM">San Marino</option><option value="ST">S&atilde;o Tom&eacute; &eacute;s Pr&iacute;ncipe</option><option value="SC">Seychelle-szigetek</option><option value="SL">Sierra Leone</option><option value="SX">Sint Maarten</option><option value="ES">Spanyolorsz&aacute;g</option><option value="LK">Sr&iacute; Lanka</option><option value="SR">Suriname</option><option value="CH">Sv&aacute;jc</option><option value="SJ">Svalbard &eacute;s Jan Mayen</option><option value="SE">Sv&eacute;dorsz&aacute;g</option><option value="WS">Szamoa</option><option value="SA">Sza&uacute;d-Ar&aacute;bia</option><option value="SN">Szeneg&aacute;l</option><option value="SH">Szent Ilona</option><option value="RS">Szerbia</option><option value="SG">Szingap&uacute;r</option><option value="SY">Sz&iacute;ria</option><option value="SK">Szlov&aacute;kia</option><option value="SI">Szlov&eacute;nia</option><option value="SO">Szom&aacute;lia</option><option value="SD">Szud&aacute;n</option><option value="SZ">Szv&aacute;zif&ouml;ld</option><option value="TJ">T&aacute;dzsikiszt&aacute;n</option><option value="TW">Tajvan</option><option value="TZ">Tanz&aacute;nia</option><option value="TH">Thaif&ouml;ld</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TR">T&ouml;r&ouml;korsz&aacute;g</option><option value="TT">Trinidad &eacute;s Tobago</option><option value="TN">Tun&eacute;zia</option><option value="TC">Turks- &eacute;s Caicos-szigetek</option><option value="TV">Tuvalu</option><option value="TM">T&uuml;rkmeniszt&aacute;n</option><option value="UG">Uganda</option><option value="NC">&Uacute;j-Kaled&oacute;nia</option><option value="NZ">&Uacute;j-Z&eacute;land</option><option value="UA">Ukrajna</option><option value="UY">Uruguay</option><option value="UZ">&Uuml;zbegiszt&aacute;n</option><option value="VU">Vanuatu</option><option value="VA">Vatik&aacute;n</option><option value="VE">Venezuela</option><option value="VN">Vietn&aacute;m</option><option value="WF">Wallis &eacute;s Futuna</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="CV">Z&ouml;ld-foki K&ouml;zt&aacute;rsas&aacute;g</option></select>
+                                </div>
+                                <div class="col">
+                                    <label for="zip-code">Irányítószám</label>
+                                    <input id="zip-code" name="name-company" type="number" class="form-control" placeholder="Irányítószám">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="city">Település</label>
+                                    <input id="city" name="city" type="text" class="form-control" placeholder="Település">
+                                </div>
+                                <div class="col">
+                                    <label for="district">Kerület</label>
+                                    <input id="district" name="district" type="number" class="form-control" placeholder="Kerület">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="street">Közterület neve</label>
+                                    <input id="street" name="street" type="text" class="form-control" placeholder="Település">
+                                </div>
+                                <div class="col">
+                                    <label for="str-blvd">Közterület jellege (pl.: utca)</label>
+                                    <input id="str-blvd" name="str-blvd" type="text" class="form-control" placeholder="Közterület jellege">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="house-num">Hsz.</label>
+                                    <input id="house-num" name="house-num" type="number" class="form-control" placeholder="Hsz.">
+                                </div>
+                                <div class="col">
+                                    <label for="building-num">Ép.</label>
+                                    <input id="building-num" name="building-num" type="number" class="form-control" placeholder="Ép.">
+                                </div>
+                                <div class="col">
+                                    <label for="stairwell-num">Lph.</label>
+                                    <input id="stairwell-num" name="stairwell-num" type="number" class="form-control" placeholder="Lph.">
+                                </div>
+                                <div class="col">
+                                    <label for="floor-num">Szint</label>
+                                    <input id="floor-num" name="floor-num" type="number" class="form-control" placeholder="Szint">
+                                </div>
+                                <div class="col">
+                                    <label for="door-num">Ajtó</label>
+                                    <input id="door-num" name="door-num" type="number" class="form-control" placeholder="Ajtó">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Mentés</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rendelési azonosító</th>
+                                    <th scope="col">Dátum</th>
+                                    <th scope="col">Állapot</th>
+                                    <th scope="col">Végösszeg</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td>2021.03.12</td>
+                                    <td class="text-primary">Szállítás folyamatban</td>
+                                    <td>17.500FT</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td>2021.03.12</td>
+                                    <td class="text-success">Átvéve</td>
+                                    <td>17.500FT</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14526</th>
+                                    <td>2021.01.23</td>
+                                    <td class="text-success">Átvéve</td>
+                                    <td>21.000FT</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td>2020.11.03</td>
+                                    <td class="text-success">Átvéve</td>
+                                    <td>10.500FT</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mb-5 mt-5" id="footer">
+        <p>&#169;Nagy Noel 2021 - Minden jog fenttartva!</p>
+        <a href="terms_of_service.html">Álltalános felhasználói szerződés</a>
+        <a class="font-weight-bold"> - </a>
+        <a href="privacy.html">Adatkezelési tájékoztató</a>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
