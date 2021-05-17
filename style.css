@@ -117,6 +117,12 @@ ol.steps-list > li + li {
     background-color: #000;
 }
 
+@media (max-width: 670px){
+    .top-ad{
+        display: none;
+    }
+}
+
 /*Accordion*/
 
 .accordion{
