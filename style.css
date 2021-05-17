@@ -227,3 +227,12 @@ ol.steps-list > li + li {
 .faq-accordion .card .card-header button{
     color: #000;
 }
+
+/*cart*/
+small, .small-text{
+    font-size: 10px;
+}
+
+.cart-delete-btn{
+    cursor: pointer;
+}
