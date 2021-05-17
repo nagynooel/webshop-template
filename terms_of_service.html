@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eedee95c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5 pt-3 pb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Webshop</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékeink
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="products/clothing.html">Ruhák</a>
+                        <a class="dropdown-item" href="products/shoes.html">Cipők</a>
+                        <a class="dropdown-item" href="products/accessories.html">Kiegészítők</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">GYIK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Cégünkről</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Elérhetőségeink</a>
+                </li>
+            </ul>
+            <div class="navbar-text nav_right_icons">
+                <a href="products/cart.html"><i class="fas fa-shopping-cart mr-2"></i></a>
+                <a href="profile.html"><i class="far fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="w-100 text-light container-fluid top-ad">
+        <div class="row text-center p-1">
+            <div class="col-sm-4">
+                <strong><i class="fas fa-money-bill"></i> FIZETÉS UTÁNVÉTTEL</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong><i class="fas fa-truck"></i> INGYENES SZÁLLÍTÁS ÉS VISSZAKÜLDÉS</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong><i class="fas fa-exchange-alt"></i> 90 NAPOS VISSZAKÜLDÉS</strong>
+            </div>
+        </div>
+    </div>
+    <div id="headerCarouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#headerCarouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#headerCarouselIndicators" data-slide-to="1"></li>
+            <li data-target="#headerCarouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="./img/carousel/slide1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Modern, fiatalos ruhák</h2>
+                        <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/clothing.html">Érdekelnek a ruhák!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel/slide2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>A legtrendibb cipők, a legnagyobb világmárkáktól</h2>
+                        <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/shoes.html">Had nézzem!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel/slide3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Klasszikus és okosórák, táskák, nyakkendők és még sok más</h2>
+                        <a class="btn btn-outline-light my-2 my-sm-0 pr-4 pl-4" href="./products/accessories.html">Válogass a kiegészítőink közül!</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#headerCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-2">Általános Szerződési Feltételek (ÁSZF) </h1>
+        <hr>
+        <p>Az Általános Szolgáltatási Feltételek („ÁSZF”) tartalmazzák  ….. cég (székhely: .............., adószám: .....................), mint szolgáltató (“Szolgáltató”) által üzemeltetett webáruház használatára vonatkozó általános szerződési feltételeket. Kérjük, hogy csak akkor vegye igénybe szolgáltatásainkat, amennyiben minden pontjával egyetért, és kötelező érvényűnek tekinti magára nézve. Jelen dokumentum nem kerül iktatásra, kizárólag elektronikus formában kerül megkötésre (nem minősül írásba foglalt szerződésnek), magatartási kódexre nem utal. </p>
+        <h3>Szolgáltató adatai: </h3>
+        <p>A szolgáltató neve:</p>
+        <p>A szolgáltató székhelye:</p>
+        <p>A szolgáltató elérhetősége, az igénybe vevőkkel való kapcsolattartásra szolgáló, rendszeresen használt elektronikus levelezési címe:</p>
+        <p>Cégjegyzékszáma:</p>
+        <p>Adószáma:</p>
+        <p>Nyilvántartásban bejegyző hatóság neve (cégbíróság):</p>
+        <p>Telefonszámai:</p>
+        <p>Adatvédelmi nyilvántartási száma:</p>
+        <p>Engedély száma:</p>
+        <p>A szerződés nyelve: magyar</p>
+        <p>A tárhely-szolgáltató adatai:</p>
+        <h3>Alapvető rendelkezések </h3>
+        <p>1.1.  A jelen Szabályzatban nem szabályozott kérdésekre, valamint jelen Szabályzat	 értelmezésére a magyar jog az irányadó, különös tekintettel a Polgári Törvénykönyvről szóló 2013. évi V. törvény („Ptk.”) és az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvény vonatkozó rendelkezéseire. A vonatkozó jogszabályok kötelező rendelkezései a felekre külön kikötés nélkül is irányadók.</p>
+        <p>1.2. Hatály, az ÁSZF módosítása.</p>
+        <p>1.3.  A webshop, mint szerzői jogi mű szerzői jogi védelme, erre figyelemfelhívás.</p>
+        <p>1.4. Rendelkezésre állás.</p>
+        <h3>Adatkezelési szabályok </h3>
+        <p>1.5. Utalni kell az adatvédelmi tájékoztató elérhetőségére, fel kell tüntetni az adatvédelmi nyilvántartási számot.</p>
+        <p>Megvásárolható termékek, szolgáltatások köre</p>
+        <p>1.6. Utalni kell arra, hogy a megjelenített termékek csak online, vagy személyesen is megvásárolhatók-e. A termékek tartalmazzák-e az Áfát. Tartalmazzák-e a házhozszállítási díjat, illetve a csomagolási díjat.</p>
+        <p>1.7.  A webshopban Szolgáltató részletesen feltünteti a termék nevét, leírását, a termékekről fotót jelenített meg. A termékek adatlapján megjelenített képek eltérhetnek a valóságostól, bizonyos esetekben illusztrációként szerepelnek.</p>
+        <p>1.8. Amennyiben akciós ár kerül bevezetésre, Szolgáltató teljes körűen tájékoztatja Felhasználókat az akció időtartamáról.</p>
+        <h3>Rendelés menete </h3>
+        <p>1.9.  A rendelés menetének részletes leírása, a bejelentkezésről a termék kosárba helyezéséig.</p>
+        <p>1.10. Adatbeviteli hibák kijavítására vonatkozó lehetőségek (pl. plusz termék, termék törlése, ár ellenőrzése stb.)</p>
+        <p>1.11. Fizetési lehetőségek, szállítási módok leírása</p>
+        <p>1.12.  A szolgáltató webáruház köteles az igénybe vevő megrendelésének megérkezését az igénybe vevő felé elektronikus úton haladéktalanul visszaigazolni. Amennyiben e visszaigazolás az igénybe vevő megrendelésének elküldésétől számított, a szolgáltatás jellegétől függő elvárható határidőn belül, de legkésőbb 48 órán belül az igénybe vevőhöz nem érkezik meg, az igénybe vevő mentesül az ajánlati kötöttség vagy szerződéses kötelezettség alól. megrendelés és annak visszaigazolása akkor tekintendő a szolgáltatóhoz, illetve az igénybe vevőhöz megérkezettnek, amikor az számára hozzáférhetővé válik. A fenti szabályoktól eltérhetnek a felek, ha ebben megállapodtak.</p>
+        <h3>A megrendelések feldolgozása és teljesítés </h3>
+        <p>1.13.  A megrendelések feldolgozása mikor történik</p>
+        <p>1.14. Általános teljesítési határidő, a visszaigazolástól számított x munkanapon belül. Ha Szolgáltató és Felhasználó a teljesítés időpontjában nem állapodtak meg, Szolgáltató Felhasználó felszólításában meghatározott időpontban vagy időn belül, felszólítás hiányában legkésőbb a megrendelésnek Szolgáltatóhoz való megérkezésétől számított harminc napon belül köteles a szerződés szerinti teljesítésre.</p>
+        <p>1.15.  Ha Szolgáltató a szerződésben vállalt kötelezettségét azért nem teljesíti, mert a szerződésben meghatározott termék nem áll rendelkezésére, köteles erről Felhasználót haladéktalanul tájékoztatni, valamint Felhasználó által fizetett összeget haladéktalanul, de legkésőbb harminc napon belül visszatéríteni. E kötelezettség teljesítése Szolgáltatót nem mentesíti szerződésszegése egyéb következményei alól.</p>
+        <h3>Elállás joga </h3>
+        <p>1.16.  A fogyasztó és a vállalkozás közötti szerződések részletes szabályairól szóló 45/2014. (II.26.) Korm. rendelet szabályozása értelmében Felhasználó a megrendelt termék kézhez vételétől számított 14 napon belül indoklás nélkül elállhat a szerződéstől, visszaküldheti a megrendelt terméket.</p>
+        <p>1.17.  Az elállási jog gyakorlásának menete... (mikor élhet vele a vásárló, mikor nem, haladéktalanul, de legkésőbb 14 napon belül visszautalja a webáruház az árat, kivételek stb.)</p>
+        <h3>Garancia, jótállás </h3>
+        <p>1.18. Termékeinkre X hónap garanciát vállalunk. Meghibásodás esetén a garancia levélben található szervizek bármelyikében személyesen vagy telefonon tájékoztatják a teendőkről, illetve elérhetőségeink valamelyikén is tájékoztatást nyújtunk. Lásd még: 151/2003. Korm. rendelet. A PTK-féle jótállás, kellékszavatosság, termékszavatosság szabályai.</p>
+        <h3>Panaszkezelés</h3>
+        <p>1.19.  A webshop köteles a fogyasztót tájékoztatni a székhelyéről, a panaszügyintézés helyéről - ha az nem egyezik meg a forgalmazás, illetve értékesítés helyével - és az adott tevékenység, kereskedelmi forma vagy módszer sajátosságaihoz igazodó módjáról, valamint a panaszok közlése érdekében a vállalkozás vagy a vállalkozás ügyfélszolgálatának levelezési címéről és - ha a panaszokat ilyen módon is fogadja - elektronikus levelezési címéről, illetve internetes címéről, telefonszámáról.</p>
+        <h3>Vegyes rendelkezések</h3>
+        <p>1.20. Szolgáltató és Felhasználó vitás ügyeiket békés úton próbálják rendezni. Felhasználó és a Szolgáltató a jelen Szabályzat hatálya alá tartozó, megegyezéssel 30 (harminc) naptári nap alatt nem rendezhető esetleges jogvitákra nézve kikötik a ...... Bíróság/Törvényszék illetékességét. </p>
+        <p class="text-right">Budapest, 2021. 05. 17 </p>
+    </div>
+    <div class="text-center mb-5" id="footer">
+        <p>&#169;Nagy Noel 2021 - Minden jog fenttartva!</p>
+        <a href="terms_of_service.html">Álltalános felhasználói szerződés</a>
+        <a class="font-weight-bold"> - </a>
+        <a href="privacy.html">Adatkezelési tájékoztató</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
