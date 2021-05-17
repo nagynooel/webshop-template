@@ -242,3 +242,115 @@ small, .small-text{
 .cart-delete-btn{
     cursor: pointer;
 }
+
+/*Individual porducts pages*/
+.product-logo{
+    width: 150px;
+    height: auto;
+}
+
+.product-colors-thumbnail{
+    width: 100px;
+    cursor: pointer;
+}
+
+.product-gallery img{
+    cursor: pointer;
+}
+
+.gallery_img{
+    -webkit-transition: transform .11s;
+    -moz-transition: transform .1s;
+    -o-transition: transform .1s;
+    transition: transform .1s;
+}
+
+.gallery_img:hover{
+    transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    cursor: pointer;
+}
+
+.custom_modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.7);
+}
+
+.custom_modal_img{
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 90vh;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.custom_modal_slide{
+    display: none;
+}
+
+.modal_prev, .modal_next, .modal_close{
+    font-size: 40px;
+    color: #fff !important;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color 1s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal_prev:hover, .modal_next:hover, .modal_close:hover{
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+.modal_prev{
+    left: 100px;
+}
+
+.modal_next{
+    right: 40px;
+}
+
+.modal_close{
+    border-radius: 0;
+    top: 25px;
+    right: -32px;
+}
+
+.product-add-btn{
+    background-color: #000 !important;
+}
+
+.product-add-btn:hover{
+    background-color: rgba(0, 0, 0, .9) !important;
+}
+
+.product-wishlist a i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.product-select{
+    max-width: 100px;
+}
