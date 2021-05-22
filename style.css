@@ -354,3 +354,8 @@ small, .small-text{
 .product-select{
     max-width: 100px;
 }
+
+/*Btn no-wrap fix*/
+.btn{
+    white-space: normal;
+}
