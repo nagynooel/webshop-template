@@ -236,7 +236,7 @@ ol.steps-list > li + li {
 
 /*categories container - faq*/
 @media (max-width: 767px) {
-    .faq-categories-cont{
+    .faq-categories-cont, .profile-categories-cont{
         border: none !important;
         border-bottom: 1px solid #dee2e6 !important;
     }
@@ -366,4 +366,18 @@ small, .small-text{
 /*Btn no-wrap fix*/
 .btn{
     white-space: normal;
+}
+
+/*orders table responsive - profile*/
+.faq-table-mobile{
+    display: none;
+}
+
+@media (max-width: 765px) {
+    .faq-table-desktop{
+        display: none;
+    }
+    .faq-table-mobile{
+        display: block;
+    }
 }

@@ -65,14 +65,14 @@
     <div class="container">
         <div class="mt-5 spacer"></div>
         <div class="row mt-2">
-            <div class="col-4 border-right border-color-secondary">
+            <div class="col-sm-12 col-md-3 border-right border-color-secondary mt-2 pb-2 profile-categories-cont">
                 <div class="nav flex-column nav-pills faq-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="true"><i class="far fa-user-circle"></i> Fiókom</a>
                     <a class="nav-link" id="v-pills-shipping-tab" data-toggle="pill" href="#v-pills-shipping" role="tab" aria-controls="v-pills-shipping" aria-selected="false"><i class="fas fa-truck"></i> Szállítási információk</a>
                     <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false"><i class="fas fa-shopping-cart"></i> Rendeléseim</a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-sm-12 col-md-9 mt-2">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
                         <h3>Fiók adatok megváltoztatása</h3>
@@ -245,8 +245,8 @@
                             <button type="submit" class="btn btn-secondary">Mentés</button>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
-                        <table class="table">
+                    <div class="tab-pane fades" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+                        <table class="table table-striped faq-table-desktop">
                             <thead>
                                 <tr>
                                     <th scope="col">Rendelési azonosító</th>
@@ -283,6 +283,37 @@
                                     <td>2020.11.03</td>
                                     <td class="text-success">Átvéve</td>
                                     <td>10.500FT</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-striped faq-table-mobile">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rendelési azonosító</th>
+                                    <th scope="col">Állapot</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td class="text-primary">Szállítás folyamatban</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td class="text-success">Átvéve</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14526</th>
+                                    <td class="text-success">Átvéve</td>
+                                    <th><a href="">További információk</a></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#12346</th>
+                                    <td class="text-success">Átvéve</td>
                                     <th><a href="">További információk</a></th>
                                 </tr>
                             </tbody>
