@@ -229,9 +229,17 @@ ol.steps-list > li + li {
     background-color: #6c757d !important;
 }
 
-/*accordion -faq*/
+/*accordion - faq*/
 .faq-accordion .card .card-header button{
     color: #000;
+}
+
+/*categories container - faq*/
+@media (max-width: 767px) {
+    .faq-categories-cont{
+        border: none !important;
+        border-bottom: 1px solid #dee2e6 !important;
+    }
 }
 
 /*cart*/
