@@ -164,8 +164,8 @@ ol.steps-list > li + li {
 
 /*Contact form*/
 .contact_form{
-    margin: 0 20%;
     background-color: rgba(0,0,0,.05);
+    max-width: 600px !important;
 }
 
 /*Timeline - about us*/
